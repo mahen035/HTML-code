@@ -2,24 +2,84 @@
 <html>
     <head>
         <title>My Web Page</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <style>
+            *{   /* this will select all elements */
+                text-indent: 50px;
+            }
+            #para1 {
+              font-size: 20px;  
+              text-transform: capitalize;
+              
+            }
+            /*
+            h1{
+                color:coral !important
+            }*/
+            #decor{
+                text-decoration: underline;
+                text-decoration: overline;
+                text-decoration: line-through;
+            }
+            /*
+            a{
+                text-decoration: none;
+                color:green
+            }*/
+        </style>
+        <link rel="stylesheet" href="main.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
-        <h1>This is the header I created</h1> <!-- Block tags -->
-        <p>My first paragraph in html document</p>
+        <div>
+            <p>First paragraph</p>
+            <h3>Header inside div</h3>
+            <div>this is division</div>
+            <h2>Header2</h2>
+            <p>Second Paragraph</p>
+            <p>Third Paragraph</p>
+            <p>Fourth Paragraph</p>
+            <p>Fifth Paragraph</p>
+        </div>
+        <div id="div1">This is div 1</div><br>
+        <button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+        <div id="div2"></div><br>
+        
+        <h1 style="color:aqua;background-color: black;">This is the header I created</h1> <!-- Block tags -->
+        <p id="para1" class="red-font">I will display &#128520;</p>
+        <p id="para2">My first &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paragraph in html document</p>
         <a href="https://www.google.com" target="_blank">click here to go to google</a><br><br> <!-- Inline tags-->
         <a href="#">Link to other section</a>
         <abbr title="world wide web">www</abbr><br>
-        <u>underline example</u>
+        <p id="decor">underline example</p>
         <pre>
             this is a pre formatted text
-
+            
 
             some line breaks
         </pre>
+        <p id="mars" >
+            The MARS Returnship program is an on-ramp for women looking to restart their careers in technology following a gap in employment. We provide on-the-job training, mentorship, and a partnership approach to prepare our cohorts to successfully rejoin the workforce.
+        </p>
         <b>Bold</b>
-        <h6>Header</h6>
+        <h1 class="red-font">Header</h1>
 
-        <table border='5'> <!-- Table with border 1 -->
+        <header>
+            <p>FIRST</p>
+            <p>SECOND</p>
+            <p>THIRD</p>
+        </header>
+
+        <table border='1' class="align-center"> <!-- Table with border 1 -->
             <caption>Personal Information</caption>
             <thead>
                 <tr>
@@ -44,7 +104,7 @@
             </tbody>
         </table>
         <hr>
-        <table border="1">
+        <table border="1" class="align-center" id="fav-color">
             <caption>Favorite and Least favorite things</caption>
             <tr>
                 <th></th>
@@ -83,15 +143,33 @@
             <li>Football</li>
         </ol>
         <hr>
+             
+        <hr>
+        <div>
+            <p>This is a new paragraph
+                <a href="#">click here</a>
+            </p>
+           
+            <p>This paragraph is inside the div element</p>
+            <p>Second paragraph</p>
+        </div>
+        
+        <p>This is my last paragraph</p>
+        <dl>
+            <dt>Tennis</dt>
+            <dd>--can be played on grass and hard court</dd>
+        </dl>
         <ul type="circle">
             <li>Soccer</li>
             <li>Tennis</li>
             <li>Football</li>
         </ul>
-        <hr>
-        <dl>
-            <dt>Tennis</dt>
-            <dd>--can be played on grass and hard court</dd>
-        </dl>
+
+        <ol type="A">
+            <li>Soccer</li>
+            <li>Tennis</li>
+            <li>Football</li>
+        </ol>
+      
     </body>
 </html>

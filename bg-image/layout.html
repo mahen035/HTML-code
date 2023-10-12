@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #static{
+            position: absolute;
+            border: 3px solid blue;
+            top:50px
+        }
+        p{
+            position:relative;
+        }
+        a{
+            display:block;
+            
+        }
+        #overflow{
+            width:250px;
+            height:80px;
+            border:2px solid blue;
+            overflow: auto;
+        }
+        img{
+            float:inherit
+        }
+        #flt{
+            float:right;
+        }
+        #brd{
+            position: absolute;
+           
+        }
+
+        #para3{
+            z-index: -1;
+        }
+       
+    </style>
+</head>
+<body>
+    <h2>This page will demonstrate use of position</h2>
+    <p> The MARS Returnship program is an on-ramp for women looking to restart their careers in technology following a gap in employment. We provide on-the-job training, mentorship, and a partnership approach to prepare our cohorts to successfully rejoin the workforce.</p>
+    
+    <div id="main">
+        <div id="static">
+            
+            this div element will have position:static
+        </div>
+    </div>
+    <a href="#" id="a1">First Link</a>
+    <a href="#">second Link</a>
+    <div id="overflow">
+        The MARS Returnship program is an on-ramp for women looking to restart their careers in technology following a gap in employment. We provide on-the-job training, mentorship, and a partnership approach to prepare our cohorts to successfully rejoin the workforce.
+    </div>
+    <hr>
+    <h2>Float Property</h2>
+    <p>
+        <div id="flt">
+            <img src="birds_new.jpg" alt="Birds Image">
+            The MARS Returnship program is an on-ramp for women looking to restart their careers in technology following a gap in employment. We provide on-the-job training, mentorship, and a partnership approach to prepare our cohorts to successfully rejoin the workforce.
+        </div>
+    </p>
+    <hr>
+    <h2>Z-Index Example</h2>
+    <img src="birds_new.jpg" alt="Birds" id="brd">
+    <p id="para3">The MARS Returnship program is an on-ramp for women looking to restart their careers in technology following a gap in employment. We provide on-the-job training, mentorship, and a partnership approach to prepare our cohorts to successfully rejoin the workforce.</p>
+</body>
+</html>

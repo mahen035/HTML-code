@@ -1,0 +1,124 @@
+#para2 {
+    background-color: rgb(71, 71, 180);
+    color:white
+}
+h1{
+    text-align: center;
+}
+.align-center{
+    margin: auto;
+    border-collapse: collapse;
+}
+#mars{
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    font-variant: small-caps;
+    font-size: xx-small;
+  
+}
+b{
+    font-family: "Sofia", "sans-serif";
+    text-shadow: 2px 2px 2px red;
+    font-size: 20px;
+}
+
+p.red-font{
+    color:red
+}
+
+div a{
+    text-transform: uppercase;
+}
+
+p>a {
+    text-decoration: none;
+}
+
+div+p{
+    background-color: bisque;
+}
+
+div ~ ul{
+   color:greenyellow
+}
+div~ol{
+    color:brown
+}
+
+p:active{
+    background-color: darkturquoise;
+}
+a:hover{
+    color:chartreuse
+}
+h1::after{
+    content:"-This is important"
+}
+input:focus{
+    background-color: darksalmon;
+}
+
+p:first-child{
+    text-decoration: underline;
+}
+p:last-child{
+    color:chartreuse
+}
+/*
+p:nth-child(2n){
+    background-color: darksalmon;
+}*/
+div>p:nth-of-type(2n){
+    background-color: darksalmon;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    
+}
+
+#div1{
+    box-sizing: border-box;
+    height:100px;
+    width: 200px;
+    
+    border-style: solid;
+    border-width: 3px;
+    padding-top: 40px;
+   
+}
+#div2{
+    height:40px;
+    width: 200px;
+    background-color:hsl(45, 80%, 50%, 0.2);
+    border-style: solid;
+    border-width: 4px;
+    border-color: brown;
+    margin: 50px 100px;
+   
+}
+
+#div3{
+    height:200px;
+    width: 400px;
+    background-image: url('./bg-image/birds_new.jpg');
+    background-repeat: no-repeat;
+    background-color:hsl(45, 80%, 50%, 0.2);
+    color:white
+   
+}
+
+#fav-color{
+    background-image: url('./bg-image/birds_new.jpg');
+    color:white
+}
+
+
+/*
+  Tag Selector
+  Id Selector
+  Class Selector
+  WildCard
+*/
